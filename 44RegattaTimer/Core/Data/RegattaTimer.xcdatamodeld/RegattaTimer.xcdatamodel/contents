@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="26200" systemVersion="23.0.0" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="IntervalEntity" representedClassName="IntervalEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="duration" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="order" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+        <relationship name="program" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ProgramEntity" inverseName="intervals" inverseEntity="ProgramEntity"/>
+    </entity>
+    <entity name="ProgramEntity" representedClassName="ProgramEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="restBetweenIntervals" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="isTabataMode" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <relationship name="intervals" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="IntervalEntity" inverseName="program" inverseEntity="IntervalEntity"/>
+    </entity>
+    <entity name="SessionEntity" representedClassName="SessionEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="intervalsCompleted" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="programId" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="programName" optional="YES" attributeType="String"/>
+        <attribute name="totalIntervals" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="totalTime" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+    </entity>
+</model>
+
