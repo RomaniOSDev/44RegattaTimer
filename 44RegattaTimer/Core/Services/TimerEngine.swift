@@ -35,8 +35,16 @@ class TimerEngine: ObservableObject {
         self.audioService = audioService
     }
     
-    func start(program: Program) {
-        guard !program.intervals.isEmpty else { return }
+    func start(program: Program) -> Bool {
+        guard !program.intervals.isEmpty else {
+            print("TimerEngine: Cannot start - program has no intervals")
+            return false
+        }
+        
+        guard program.intervals.allSatisfy({ $0.duration > 0 }) else {
+            print("TimerEngine: Cannot start - program has intervals with invalid duration")
+            return false
+        }
         
         self.program = program
         state = .running
@@ -49,6 +57,7 @@ class TimerEngine: ObservableObject {
         updateTotalProgress()
         startTimer()
         onIntervalChange?(currentIntervalIndex)
+        return true
     }
     
     func pause() {

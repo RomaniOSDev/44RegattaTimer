@@ -62,6 +62,7 @@ class PersistenceService {
             }
             
             // Add new intervals
+            print("PersistenceService: Saving program '\(program.name)' with \(program.intervals.count) intervals")
             for interval in program.intervals {
                 let intervalEntity = IntervalEntity(context: context)
                 intervalEntity.id = interval.id
@@ -70,9 +71,11 @@ class PersistenceService {
                 intervalEntity.duration = interval.duration
                 intervalEntity.type = interval.type.rawValue
                 entity.addToIntervals(intervalEntity)
+                print("PersistenceService: Saved interval '\(interval.name)' - \(interval.duration)s")
             }
             
             try context.save()
+            print("PersistenceService: Program saved successfully")
         } catch {
             print("Failed to save program: \(error.localizedDescription)")
         }
@@ -166,13 +169,15 @@ class PersistenceService {
                 type: IntervalType(rawValue: intervalEntity.type ?? "work") ?? .work
             )
         }
-        return Program(
+        let program = Program(
             id: entity.id ?? UUID(),
             name: entity.name ?? "",
             intervals: intervals,
             restBetweenIntervals: entity.restBetweenIntervals,
             isTabataMode: entity.isTabataMode
         )
+        print("PersistenceService: Loaded program '\(program.name)' with \(program.intervals.count) intervals")
+        return program
     }
     
     private func entityToSession(_ entity: SessionEntity) -> SessionResult {

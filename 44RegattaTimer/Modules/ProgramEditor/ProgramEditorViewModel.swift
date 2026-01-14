@@ -25,8 +25,19 @@ class ProgramEditorViewModel: ObservableObject {
         self.persistenceService = persistenceService
     }
     
-    func saveProgram() {
+    func saveProgram() -> Bool {
+        // Validate that program has at least one interval
+        guard !program.intervals.isEmpty else {
+            return false
+        }
+        
+        // Validate that all intervals have valid duration
+        guard program.intervals.allSatisfy({ $0.duration > 0 }) else {
+            return false
+        }
+        
         persistenceService.saveProgram(program)
+        return true
     }
     
     func addInterval() {

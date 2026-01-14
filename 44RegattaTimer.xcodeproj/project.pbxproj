@@ -7,107 +7,107 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		74ADD6882F16212300947F23 /* ProgramEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ADD6422F16212300947F23 /* ProgramEntity.swift */; };
-		74ADD6892F16212300947F23 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ADD6442F16212300947F23 /* CoreDataStack.swift */; };
-		74ADD68A2F16212300947F23 /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ADD6452F16212300947F23 /* PersistenceService.swift */; };
-		74ADD68B2F16212300947F23 /* RegattaTimer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 74ADD6462F16212300947F23 /* RegattaTimer.xcdatamodeld */; };
-		74ADD68C2F16212300947F23 /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ADD6482F16212300947F23 /* Achievement.swift */; };
-		74ADD68D2F16212300947F23 /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ADD6492F16212300947F23 /* Goal.swift */; };
-		74ADD68E2F16212300947F23 /* Interval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ADD64A2F16212300947F23 /* Interval.swift */; };
-		74ADD68F2F16212300947F23 /* IntervalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ADD64B2F16212300947F23 /* IntervalType.swift */; };
-		74ADD6902F16212300947F23 /* Program.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ADD64C2F16212300947F23 /* Program.swift */; };
-		74ADD6912F16212300947F23 /* ScheduledWorkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ADD64D2F16212300947F23 /* ScheduledWorkout.swift */; };
-		74ADD6922F16212300947F23 /* SessionResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ADD64E2F16212300947F23 /* SessionResult.swift */; };
-		74ADD6932F16212300947F23 /* WorkoutMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ADD64F2F16212300947F23 /* WorkoutMode.swift */; };
-		74ADD6942F16212300947F23 /* AchievementService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ADD6512F16212300947F23 /* AchievementService.swift */; };
-		74ADD6952F16212300947F23 /* AudioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ADD6522F16212300947F23 /* AudioService.swift */; };
-		74ADD6962F16212300947F23 /* GoalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ADD6532F16212300947F23 /* GoalService.swift */; };
-		74ADD6972F16212300947F23 /* PaceGhostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ADD6542F16212300947F23 /* PaceGhostService.swift */; };
-		74ADD6982F16212300947F23 /* ScheduleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ADD6552F16212300947F23 /* ScheduleService.swift */; };
-		74ADD6992F16212300947F23 /* TimerEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ADD6562F16212300947F23 /* TimerEngine.swift */; };
-		74ADD69A2F16212300947F23 /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ADD6582F16212300947F23 /* ColorTheme.swift */; };
-		74ADD69B2F16212300947F23 /* AchievementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ADD65B2F16212300947F23 /* AchievementsView.swift */; };
-		74ADD69C2F16212300947F23 /* GoalEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ADD65D2F16212300947F23 /* GoalEditorView.swift */; };
-		74ADD69D2F16212300947F23 /* GoalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ADD65E2F16212300947F23 /* GoalsView.swift */; };
-		74ADD69E2F16212300947F23 /* ScheduleEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ADD65F2F16212300947F23 /* ScheduleEditorView.swift */; };
-		74ADD69F2F16212300947F23 /* CheckLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ADD6612F16212300947F23 /* CheckLink.swift */; };
-		74ADD6A02F16212300947F23 /* InternetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ADD6622F16212300947F23 /* InternetViewController.swift */; };
-		74ADD6A12F16212300947F23 /* LoaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ADD6632F16212300947F23 /* LoaderViewController.swift */; };
-		74ADD6A22F16212300947F23 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ADD6652F16212300947F23 /* OnboardingView.swift */; };
-		74ADD6A32F16212300947F23 /* ProgramEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ADD6672F16212300947F23 /* ProgramEditorView.swift */; };
-		74ADD6A42F16212300947F23 /* ProgramEditorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ADD6682F16212300947F23 /* ProgramEditorViewModel.swift */; };
-		74ADD6A52F16212300947F23 /* ProgramListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ADD66A2F16212300947F23 /* ProgramListView.swift */; };
-		74ADD6A62F16212300947F23 /* ProgramListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ADD66B2F16212300947F23 /* ProgramListViewModel.swift */; };
-		74ADD6A72F16212300947F23 /* WorkoutModeSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ADD66C2F16212300947F23 /* WorkoutModeSelectorView.swift */; };
-		74ADD6A82F16212300947F23 /* RaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ADD66E2F16212300947F23 /* RaceView.swift */; };
-		74ADD6A92F16212300947F23 /* RaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ADD66F2F16212300947F23 /* RaceViewModel.swift */; };
-		74ADD6AA2F16212300947F23 /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ADD6712F16212300947F23 /* HistoryViewModel.swift */; };
-		74ADD6AB2F16212300947F23 /* SessionResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ADD6722F16212300947F23 /* SessionResultView.swift */; };
-		74ADD6AC2F16212300947F23 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ADD6742F16212300947F23 /* SettingsView.swift */; };
-		74ADD6AD2F16212300947F23 /* AnalyticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ADD6762F16212300947F23 /* AnalyticsView.swift */; };
-		74ADD6AE2F16212300947F23 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ADD6772F16212300947F23 /* HistoryView.swift */; };
-		74ADD6AF2F16212300947F23 /* ProgressChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ADD6782F16212300947F23 /* ProgressChartView.swift */; };
-		74ADD6B02F16212300947F23 /* StatisticsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ADD6792F16212300947F23 /* StatisticsViewModel.swift */; };
-		74ADD6B12F16212300947F23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ADD67C2F16212300947F23 /* AppDelegate.swift */; };
-		74ADD6B22F16212300947F23 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ADD67E2F16212300947F23 /* ContentView.swift */; };
-		74ADD6B32F16212300947F23 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ADD6842F16212300947F23 /* SceneDelegate.swift */; };
-		74ADD6B42F16212300947F23 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ADD6852F16212300947F23 /* ViewController.swift */; };
-		74ADD6B52F16212300947F23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74ADD67D2F16212300947F23 /* Assets.xcassets */; };
-		74ADD6B72F16212300947F23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74ADD6812F16212300947F23 /* LaunchScreen.storyboard */; };
-		74ADD6B82F16212300947F23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74ADD6832F16212300947F23 /* Main.storyboard */; };
+		74D1AE9F2F17F8C00078A524 /* ProgramEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D1AE592F17F8C00078A524 /* ProgramEntity.swift */; };
+		74D1AEA02F17F8C00078A524 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D1AE5B2F17F8C00078A524 /* CoreDataStack.swift */; };
+		74D1AEA12F17F8C00078A524 /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D1AE5C2F17F8C00078A524 /* PersistenceService.swift */; };
+		74D1AEA22F17F8C00078A524 /* RegattaTimer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 74D1AE5D2F17F8C00078A524 /* RegattaTimer.xcdatamodeld */; };
+		74D1AEA32F17F8C00078A524 /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D1AE5F2F17F8C00078A524 /* Achievement.swift */; };
+		74D1AEA42F17F8C00078A524 /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D1AE602F17F8C00078A524 /* Goal.swift */; };
+		74D1AEA52F17F8C00078A524 /* Interval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D1AE612F17F8C00078A524 /* Interval.swift */; };
+		74D1AEA62F17F8C00078A524 /* IntervalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D1AE622F17F8C00078A524 /* IntervalType.swift */; };
+		74D1AEA72F17F8C00078A524 /* Program.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D1AE632F17F8C00078A524 /* Program.swift */; };
+		74D1AEA82F17F8C00078A524 /* ScheduledWorkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D1AE642F17F8C00078A524 /* ScheduledWorkout.swift */; };
+		74D1AEA92F17F8C00078A524 /* SessionResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D1AE652F17F8C00078A524 /* SessionResult.swift */; };
+		74D1AEAA2F17F8C00078A524 /* WorkoutMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D1AE662F17F8C00078A524 /* WorkoutMode.swift */; };
+		74D1AEAB2F17F8C00078A524 /* AchievementService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D1AE682F17F8C00078A524 /* AchievementService.swift */; };
+		74D1AEAC2F17F8C00078A524 /* AudioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D1AE692F17F8C00078A524 /* AudioService.swift */; };
+		74D1AEAD2F17F8C00078A524 /* GoalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D1AE6A2F17F8C00078A524 /* GoalService.swift */; };
+		74D1AEAE2F17F8C00078A524 /* PaceGhostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D1AE6B2F17F8C00078A524 /* PaceGhostService.swift */; };
+		74D1AEAF2F17F8C00078A524 /* ScheduleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D1AE6C2F17F8C00078A524 /* ScheduleService.swift */; };
+		74D1AEB02F17F8C00078A524 /* TimerEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D1AE6D2F17F8C00078A524 /* TimerEngine.swift */; };
+		74D1AEB12F17F8C00078A524 /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D1AE6F2F17F8C00078A524 /* ColorTheme.swift */; };
+		74D1AEB22F17F8C00078A524 /* AchievementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D1AE722F17F8C00078A524 /* AchievementsView.swift */; };
+		74D1AEB32F17F8C00078A524 /* GoalEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D1AE742F17F8C00078A524 /* GoalEditorView.swift */; };
+		74D1AEB42F17F8C00078A524 /* GoalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D1AE752F17F8C00078A524 /* GoalsView.swift */; };
+		74D1AEB52F17F8C00078A524 /* ScheduleEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D1AE762F17F8C00078A524 /* ScheduleEditorView.swift */; };
+		74D1AEB62F17F8C00078A524 /* CheckLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D1AE782F17F8C00078A524 /* CheckLink.swift */; };
+		74D1AEB72F17F8C00078A524 /* InternetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D1AE792F17F8C00078A524 /* InternetViewController.swift */; };
+		74D1AEB82F17F8C00078A524 /* LoaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D1AE7A2F17F8C00078A524 /* LoaderViewController.swift */; };
+		74D1AEB92F17F8C00078A524 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D1AE7C2F17F8C00078A524 /* OnboardingView.swift */; };
+		74D1AEBA2F17F8C00078A524 /* ProgramEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D1AE7E2F17F8C00078A524 /* ProgramEditorView.swift */; };
+		74D1AEBB2F17F8C00078A524 /* ProgramEditorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D1AE7F2F17F8C00078A524 /* ProgramEditorViewModel.swift */; };
+		74D1AEBC2F17F8C00078A524 /* ProgramListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D1AE812F17F8C00078A524 /* ProgramListView.swift */; };
+		74D1AEBD2F17F8C00078A524 /* ProgramListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D1AE822F17F8C00078A524 /* ProgramListViewModel.swift */; };
+		74D1AEBE2F17F8C00078A524 /* WorkoutModeSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D1AE832F17F8C00078A524 /* WorkoutModeSelectorView.swift */; };
+		74D1AEBF2F17F8C00078A524 /* RaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D1AE852F17F8C00078A524 /* RaceView.swift */; };
+		74D1AEC02F17F8C00078A524 /* RaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D1AE862F17F8C00078A524 /* RaceViewModel.swift */; };
+		74D1AEC12F17F8C00078A524 /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D1AE882F17F8C00078A524 /* HistoryViewModel.swift */; };
+		74D1AEC22F17F8C00078A524 /* SessionResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D1AE892F17F8C00078A524 /* SessionResultView.swift */; };
+		74D1AEC32F17F8C00078A524 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D1AE8B2F17F8C00078A524 /* SettingsView.swift */; };
+		74D1AEC42F17F8C00078A524 /* AnalyticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D1AE8D2F17F8C00078A524 /* AnalyticsView.swift */; };
+		74D1AEC52F17F8C00078A524 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D1AE8E2F17F8C00078A524 /* HistoryView.swift */; };
+		74D1AEC62F17F8C00078A524 /* ProgressChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D1AE8F2F17F8C00078A524 /* ProgressChartView.swift */; };
+		74D1AEC72F17F8C00078A524 /* StatisticsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D1AE902F17F8C00078A524 /* StatisticsViewModel.swift */; };
+		74D1AEC82F17F8C00078A524 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D1AE932F17F8C00078A524 /* AppDelegate.swift */; };
+		74D1AEC92F17F8C00078A524 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D1AE952F17F8C00078A524 /* ContentView.swift */; };
+		74D1AECA2F17F8C00078A524 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D1AE9B2F17F8C00078A524 /* SceneDelegate.swift */; };
+		74D1AECB2F17F8C00078A524 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D1AE9C2F17F8C00078A524 /* ViewController.swift */; };
+		74D1AECC2F17F8C00078A524 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74D1AE942F17F8C00078A524 /* Assets.xcassets */; };
+		74D1AECE2F17F8C00078A524 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74D1AE982F17F8C00078A524 /* LaunchScreen.storyboard */; };
+		74D1AECF2F17F8C00078A524 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74D1AE9A2F17F8C00078A524 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0A09F4070AE69C7B249017F5 /* Pods-44RegattaTimer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-44RegattaTimer.release.xcconfig"; path = "Target Support Files/Pods-44RegattaTimer/Pods-44RegattaTimer.release.xcconfig"; sourceTree = "<group>"; };
-		74ADD6422F16212300947F23 /* ProgramEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramEntity.swift; sourceTree = "<group>"; };
-		74ADD6442F16212300947F23 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
-		74ADD6452F16212300947F23 /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
-		74ADD6482F16212300947F23 /* Achievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievement.swift; sourceTree = "<group>"; };
-		74ADD6492F16212300947F23 /* Goal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
-		74ADD64A2F16212300947F23 /* Interval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interval.swift; sourceTree = "<group>"; };
-		74ADD64B2F16212300947F23 /* IntervalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalType.swift; sourceTree = "<group>"; };
-		74ADD64C2F16212300947F23 /* Program.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Program.swift; sourceTree = "<group>"; };
-		74ADD64D2F16212300947F23 /* ScheduledWorkout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduledWorkout.swift; sourceTree = "<group>"; };
-		74ADD64E2F16212300947F23 /* SessionResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionResult.swift; sourceTree = "<group>"; };
-		74ADD64F2F16212300947F23 /* WorkoutMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutMode.swift; sourceTree = "<group>"; };
-		74ADD6512F16212300947F23 /* AchievementService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementService.swift; sourceTree = "<group>"; };
-		74ADD6522F16212300947F23 /* AudioService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioService.swift; sourceTree = "<group>"; };
-		74ADD6532F16212300947F23 /* GoalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalService.swift; sourceTree = "<group>"; };
-		74ADD6542F16212300947F23 /* PaceGhostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaceGhostService.swift; sourceTree = "<group>"; };
-		74ADD6552F16212300947F23 /* ScheduleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleService.swift; sourceTree = "<group>"; };
-		74ADD6562F16212300947F23 /* TimerEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerEngine.swift; sourceTree = "<group>"; };
-		74ADD6582F16212300947F23 /* ColorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTheme.swift; sourceTree = "<group>"; };
-		74ADD65B2F16212300947F23 /* AchievementsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsView.swift; sourceTree = "<group>"; };
-		74ADD65D2F16212300947F23 /* GoalEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalEditorView.swift; sourceTree = "<group>"; };
-		74ADD65E2F16212300947F23 /* GoalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsView.swift; sourceTree = "<group>"; };
-		74ADD65F2F16212300947F23 /* ScheduleEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleEditorView.swift; sourceTree = "<group>"; };
-		74ADD6612F16212300947F23 /* CheckLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckLink.swift; sourceTree = "<group>"; };
-		74ADD6622F16212300947F23 /* InternetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetViewController.swift; sourceTree = "<group>"; };
-		74ADD6632F16212300947F23 /* LoaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderViewController.swift; sourceTree = "<group>"; };
-		74ADD6652F16212300947F23 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
-		74ADD6672F16212300947F23 /* ProgramEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramEditorView.swift; sourceTree = "<group>"; };
-		74ADD6682F16212300947F23 /* ProgramEditorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramEditorViewModel.swift; sourceTree = "<group>"; };
-		74ADD66A2F16212300947F23 /* ProgramListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramListView.swift; sourceTree = "<group>"; };
-		74ADD66B2F16212300947F23 /* ProgramListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramListViewModel.swift; sourceTree = "<group>"; };
-		74ADD66C2F16212300947F23 /* WorkoutModeSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutModeSelectorView.swift; sourceTree = "<group>"; };
-		74ADD66E2F16212300947F23 /* RaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceView.swift; sourceTree = "<group>"; };
-		74ADD66F2F16212300947F23 /* RaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceViewModel.swift; sourceTree = "<group>"; };
-		74ADD6712F16212300947F23 /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
-		74ADD6722F16212300947F23 /* SessionResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionResultView.swift; sourceTree = "<group>"; };
-		74ADD6742F16212300947F23 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		74ADD6762F16212300947F23 /* AnalyticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsView.swift; sourceTree = "<group>"; };
-		74ADD6772F16212300947F23 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
-		74ADD6782F16212300947F23 /* ProgressChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressChartView.swift; sourceTree = "<group>"; };
-		74ADD6792F16212300947F23 /* StatisticsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewModel.swift; sourceTree = "<group>"; };
-		74ADD67C2F16212300947F23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		74ADD67D2F16212300947F23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		74ADD67E2F16212300947F23 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		74ADD67F2F16212300947F23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		74ADD6802F16212300947F23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		74ADD6822F16212300947F23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		74ADD6842F16212300947F23 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		74ADD6852F16212300947F23 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		74ADD6872F16212300947F23 /* RegattaTimer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RegattaTimer.xcdatamodel; sourceTree = "<group>"; };
+		74D1AE592F17F8C00078A524 /* ProgramEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramEntity.swift; sourceTree = "<group>"; };
+		74D1AE5B2F17F8C00078A524 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		74D1AE5C2F17F8C00078A524 /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
+		74D1AE5F2F17F8C00078A524 /* Achievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievement.swift; sourceTree = "<group>"; };
+		74D1AE602F17F8C00078A524 /* Goal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
+		74D1AE612F17F8C00078A524 /* Interval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interval.swift; sourceTree = "<group>"; };
+		74D1AE622F17F8C00078A524 /* IntervalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalType.swift; sourceTree = "<group>"; };
+		74D1AE632F17F8C00078A524 /* Program.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Program.swift; sourceTree = "<group>"; };
+		74D1AE642F17F8C00078A524 /* ScheduledWorkout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduledWorkout.swift; sourceTree = "<group>"; };
+		74D1AE652F17F8C00078A524 /* SessionResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionResult.swift; sourceTree = "<group>"; };
+		74D1AE662F17F8C00078A524 /* WorkoutMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutMode.swift; sourceTree = "<group>"; };
+		74D1AE682F17F8C00078A524 /* AchievementService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementService.swift; sourceTree = "<group>"; };
+		74D1AE692F17F8C00078A524 /* AudioService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioService.swift; sourceTree = "<group>"; };
+		74D1AE6A2F17F8C00078A524 /* GoalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalService.swift; sourceTree = "<group>"; };
+		74D1AE6B2F17F8C00078A524 /* PaceGhostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaceGhostService.swift; sourceTree = "<group>"; };
+		74D1AE6C2F17F8C00078A524 /* ScheduleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleService.swift; sourceTree = "<group>"; };
+		74D1AE6D2F17F8C00078A524 /* TimerEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerEngine.swift; sourceTree = "<group>"; };
+		74D1AE6F2F17F8C00078A524 /* ColorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTheme.swift; sourceTree = "<group>"; };
+		74D1AE722F17F8C00078A524 /* AchievementsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsView.swift; sourceTree = "<group>"; };
+		74D1AE742F17F8C00078A524 /* GoalEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalEditorView.swift; sourceTree = "<group>"; };
+		74D1AE752F17F8C00078A524 /* GoalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsView.swift; sourceTree = "<group>"; };
+		74D1AE762F17F8C00078A524 /* ScheduleEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleEditorView.swift; sourceTree = "<group>"; };
+		74D1AE782F17F8C00078A524 /* CheckLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckLink.swift; sourceTree = "<group>"; };
+		74D1AE792F17F8C00078A524 /* InternetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetViewController.swift; sourceTree = "<group>"; };
+		74D1AE7A2F17F8C00078A524 /* LoaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderViewController.swift; sourceTree = "<group>"; };
+		74D1AE7C2F17F8C00078A524 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		74D1AE7E2F17F8C00078A524 /* ProgramEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramEditorView.swift; sourceTree = "<group>"; };
+		74D1AE7F2F17F8C00078A524 /* ProgramEditorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramEditorViewModel.swift; sourceTree = "<group>"; };
+		74D1AE812F17F8C00078A524 /* ProgramListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramListView.swift; sourceTree = "<group>"; };
+		74D1AE822F17F8C00078A524 /* ProgramListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramListViewModel.swift; sourceTree = "<group>"; };
+		74D1AE832F17F8C00078A524 /* WorkoutModeSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutModeSelectorView.swift; sourceTree = "<group>"; };
+		74D1AE852F17F8C00078A524 /* RaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceView.swift; sourceTree = "<group>"; };
+		74D1AE862F17F8C00078A524 /* RaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceViewModel.swift; sourceTree = "<group>"; };
+		74D1AE882F17F8C00078A524 /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
+		74D1AE892F17F8C00078A524 /* SessionResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionResultView.swift; sourceTree = "<group>"; };
+		74D1AE8B2F17F8C00078A524 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		74D1AE8D2F17F8C00078A524 /* AnalyticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsView.swift; sourceTree = "<group>"; };
+		74D1AE8E2F17F8C00078A524 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		74D1AE8F2F17F8C00078A524 /* ProgressChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressChartView.swift; sourceTree = "<group>"; };
+		74D1AE902F17F8C00078A524 /* StatisticsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewModel.swift; sourceTree = "<group>"; };
+		74D1AE932F17F8C00078A524 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		74D1AE942F17F8C00078A524 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		74D1AE952F17F8C00078A524 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		74D1AE962F17F8C00078A524 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74D1AE972F17F8C00078A524 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		74D1AE992F17F8C00078A524 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		74D1AE9B2F17F8C00078A524 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		74D1AE9C2F17F8C00078A524 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		74D1AE9E2F17F8C00078A524 /* RegattaTimer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RegattaTimer.xcdatamodel; sourceTree = "<group>"; };
 		74E2F18E2F0E49050077B7C4 /* 44RegattaTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 44RegattaTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AACC41BC277E46DFE6FDC3AB /* Pods_44RegattaTimer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_44RegattaTimer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC76D99840DBD1A64EF1EDE0 /* Pods-44RegattaTimer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-44RegattaTimer.debug.xcconfig"; path = "Target Support Files/Pods-44RegattaTimer/Pods-44RegattaTimer.debug.xcconfig"; sourceTree = "<group>"; };
@@ -132,194 +132,194 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		74ADD6432F16212300947F23 /* Entities */ = {
+		74D1AE5A2F17F8C00078A524 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				74ADD6422F16212300947F23 /* ProgramEntity.swift */,
+				74D1AE592F17F8C00078A524 /* ProgramEntity.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
 		};
-		74ADD6472F16212300947F23 /* Data */ = {
+		74D1AE5E2F17F8C00078A524 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				74ADD6432F16212300947F23 /* Entities */,
-				74ADD6442F16212300947F23 /* CoreDataStack.swift */,
-				74ADD6452F16212300947F23 /* PersistenceService.swift */,
-				74ADD6462F16212300947F23 /* RegattaTimer.xcdatamodeld */,
+				74D1AE5A2F17F8C00078A524 /* Entities */,
+				74D1AE5B2F17F8C00078A524 /* CoreDataStack.swift */,
+				74D1AE5C2F17F8C00078A524 /* PersistenceService.swift */,
+				74D1AE5D2F17F8C00078A524 /* RegattaTimer.xcdatamodeld */,
 			);
 			path = Data;
 			sourceTree = "<group>";
 		};
-		74ADD6502F16212300947F23 /* Models */ = {
+		74D1AE672F17F8C00078A524 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				74ADD6482F16212300947F23 /* Achievement.swift */,
-				74ADD6492F16212300947F23 /* Goal.swift */,
-				74ADD64A2F16212300947F23 /* Interval.swift */,
-				74ADD64B2F16212300947F23 /* IntervalType.swift */,
-				74ADD64C2F16212300947F23 /* Program.swift */,
-				74ADD64D2F16212300947F23 /* ScheduledWorkout.swift */,
-				74ADD64E2F16212300947F23 /* SessionResult.swift */,
-				74ADD64F2F16212300947F23 /* WorkoutMode.swift */,
+				74D1AE5F2F17F8C00078A524 /* Achievement.swift */,
+				74D1AE602F17F8C00078A524 /* Goal.swift */,
+				74D1AE612F17F8C00078A524 /* Interval.swift */,
+				74D1AE622F17F8C00078A524 /* IntervalType.swift */,
+				74D1AE632F17F8C00078A524 /* Program.swift */,
+				74D1AE642F17F8C00078A524 /* ScheduledWorkout.swift */,
+				74D1AE652F17F8C00078A524 /* SessionResult.swift */,
+				74D1AE662F17F8C00078A524 /* WorkoutMode.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		74ADD6572F16212300947F23 /* Services */ = {
+		74D1AE6E2F17F8C00078A524 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				74ADD6512F16212300947F23 /* AchievementService.swift */,
-				74ADD6522F16212300947F23 /* AudioService.swift */,
-				74ADD6532F16212300947F23 /* GoalService.swift */,
-				74ADD6542F16212300947F23 /* PaceGhostService.swift */,
-				74ADD6552F16212300947F23 /* ScheduleService.swift */,
-				74ADD6562F16212300947F23 /* TimerEngine.swift */,
+				74D1AE682F17F8C00078A524 /* AchievementService.swift */,
+				74D1AE692F17F8C00078A524 /* AudioService.swift */,
+				74D1AE6A2F17F8C00078A524 /* GoalService.swift */,
+				74D1AE6B2F17F8C00078A524 /* PaceGhostService.swift */,
+				74D1AE6C2F17F8C00078A524 /* ScheduleService.swift */,
+				74D1AE6D2F17F8C00078A524 /* TimerEngine.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
 		};
-		74ADD6592F16212300947F23 /* Utilities */ = {
+		74D1AE702F17F8C00078A524 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				74ADD6582F16212300947F23 /* ColorTheme.swift */,
+				74D1AE6F2F17F8C00078A524 /* ColorTheme.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		74ADD65A2F16212300947F23 /* Core */ = {
+		74D1AE712F17F8C00078A524 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				74ADD6472F16212300947F23 /* Data */,
-				74ADD6502F16212300947F23 /* Models */,
-				74ADD6572F16212300947F23 /* Services */,
-				74ADD6592F16212300947F23 /* Utilities */,
+				74D1AE5E2F17F8C00078A524 /* Data */,
+				74D1AE672F17F8C00078A524 /* Models */,
+				74D1AE6E2F17F8C00078A524 /* Services */,
+				74D1AE702F17F8C00078A524 /* Utilities */,
 			);
 			path = Core;
 			sourceTree = "<group>";
 		};
-		74ADD65C2F16212300947F23 /* Achievements */ = {
+		74D1AE732F17F8C00078A524 /* Achievements */ = {
 			isa = PBXGroup;
 			children = (
-				74ADD65B2F16212300947F23 /* AchievementsView.swift */,
+				74D1AE722F17F8C00078A524 /* AchievementsView.swift */,
 			);
 			path = Achievements;
 			sourceTree = "<group>";
 		};
-		74ADD6602F16212300947F23 /* Goals */ = {
+		74D1AE772F17F8C00078A524 /* Goals */ = {
 			isa = PBXGroup;
 			children = (
-				74ADD65D2F16212300947F23 /* GoalEditorView.swift */,
-				74ADD65E2F16212300947F23 /* GoalsView.swift */,
-				74ADD65F2F16212300947F23 /* ScheduleEditorView.swift */,
+				74D1AE742F17F8C00078A524 /* GoalEditorView.swift */,
+				74D1AE752F17F8C00078A524 /* GoalsView.swift */,
+				74D1AE762F17F8C00078A524 /* ScheduleEditorView.swift */,
 			);
 			path = Goals;
 			sourceTree = "<group>";
 		};
-		74ADD6642F16212300947F23 /* LoadingView */ = {
+		74D1AE7B2F17F8C00078A524 /* LoadingView */ = {
 			isa = PBXGroup;
 			children = (
-				74ADD6612F16212300947F23 /* CheckLink.swift */,
-				74ADD6622F16212300947F23 /* InternetViewController.swift */,
-				74ADD6632F16212300947F23 /* LoaderViewController.swift */,
+				74D1AE782F17F8C00078A524 /* CheckLink.swift */,
+				74D1AE792F17F8C00078A524 /* InternetViewController.swift */,
+				74D1AE7A2F17F8C00078A524 /* LoaderViewController.swift */,
 			);
 			path = LoadingView;
 			sourceTree = "<group>";
 		};
-		74ADD6662F16212300947F23 /* Onboarding */ = {
+		74D1AE7D2F17F8C00078A524 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				74ADD6652F16212300947F23 /* OnboardingView.swift */,
+				74D1AE7C2F17F8C00078A524 /* OnboardingView.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
-		74ADD6692F16212300947F23 /* ProgramEditor */ = {
+		74D1AE802F17F8C00078A524 /* ProgramEditor */ = {
 			isa = PBXGroup;
 			children = (
-				74ADD6672F16212300947F23 /* ProgramEditorView.swift */,
-				74ADD6682F16212300947F23 /* ProgramEditorViewModel.swift */,
+				74D1AE7E2F17F8C00078A524 /* ProgramEditorView.swift */,
+				74D1AE7F2F17F8C00078A524 /* ProgramEditorViewModel.swift */,
 			);
 			path = ProgramEditor;
 			sourceTree = "<group>";
 		};
-		74ADD66D2F16212300947F23 /* ProgramList */ = {
+		74D1AE842F17F8C00078A524 /* ProgramList */ = {
 			isa = PBXGroup;
 			children = (
-				74ADD66A2F16212300947F23 /* ProgramListView.swift */,
-				74ADD66B2F16212300947F23 /* ProgramListViewModel.swift */,
-				74ADD66C2F16212300947F23 /* WorkoutModeSelectorView.swift */,
+				74D1AE812F17F8C00078A524 /* ProgramListView.swift */,
+				74D1AE822F17F8C00078A524 /* ProgramListViewModel.swift */,
+				74D1AE832F17F8C00078A524 /* WorkoutModeSelectorView.swift */,
 			);
 			path = ProgramList;
 			sourceTree = "<group>";
 		};
-		74ADD6702F16212300947F23 /* RaceView */ = {
+		74D1AE872F17F8C00078A524 /* RaceView */ = {
 			isa = PBXGroup;
 			children = (
-				74ADD66E2F16212300947F23 /* RaceView.swift */,
-				74ADD66F2F16212300947F23 /* RaceViewModel.swift */,
+				74D1AE852F17F8C00078A524 /* RaceView.swift */,
+				74D1AE862F17F8C00078A524 /* RaceViewModel.swift */,
 			);
 			path = RaceView;
 			sourceTree = "<group>";
 		};
-		74ADD6732F16212300947F23 /* SessionHistory */ = {
+		74D1AE8A2F17F8C00078A524 /* SessionHistory */ = {
 			isa = PBXGroup;
 			children = (
-				74ADD6712F16212300947F23 /* HistoryViewModel.swift */,
-				74ADD6722F16212300947F23 /* SessionResultView.swift */,
+				74D1AE882F17F8C00078A524 /* HistoryViewModel.swift */,
+				74D1AE892F17F8C00078A524 /* SessionResultView.swift */,
 			);
 			path = SessionHistory;
 			sourceTree = "<group>";
 		};
-		74ADD6752F16212300947F23 /* Settings */ = {
+		74D1AE8C2F17F8C00078A524 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				74ADD6742F16212300947F23 /* SettingsView.swift */,
+				74D1AE8B2F17F8C00078A524 /* SettingsView.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
 		};
-		74ADD67A2F16212300947F23 /* Statistics */ = {
+		74D1AE912F17F8C00078A524 /* Statistics */ = {
 			isa = PBXGroup;
 			children = (
-				74ADD6762F16212300947F23 /* AnalyticsView.swift */,
-				74ADD6772F16212300947F23 /* HistoryView.swift */,
-				74ADD6782F16212300947F23 /* ProgressChartView.swift */,
-				74ADD6792F16212300947F23 /* StatisticsViewModel.swift */,
+				74D1AE8D2F17F8C00078A524 /* AnalyticsView.swift */,
+				74D1AE8E2F17F8C00078A524 /* HistoryView.swift */,
+				74D1AE8F2F17F8C00078A524 /* ProgressChartView.swift */,
+				74D1AE902F17F8C00078A524 /* StatisticsViewModel.swift */,
 			);
 			path = Statistics;
 			sourceTree = "<group>";
 		};
-		74ADD67B2F16212300947F23 /* Modules */ = {
+		74D1AE922F17F8C00078A524 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				74ADD65C2F16212300947F23 /* Achievements */,
-				74ADD6602F16212300947F23 /* Goals */,
-				74ADD6642F16212300947F23 /* LoadingView */,
-				74ADD6662F16212300947F23 /* Onboarding */,
-				74ADD6692F16212300947F23 /* ProgramEditor */,
-				74ADD66D2F16212300947F23 /* ProgramList */,
-				74ADD6702F16212300947F23 /* RaceView */,
-				74ADD6732F16212300947F23 /* SessionHistory */,
-				74ADD6752F16212300947F23 /* Settings */,
-				74ADD67A2F16212300947F23 /* Statistics */,
+				74D1AE732F17F8C00078A524 /* Achievements */,
+				74D1AE772F17F8C00078A524 /* Goals */,
+				74D1AE7B2F17F8C00078A524 /* LoadingView */,
+				74D1AE7D2F17F8C00078A524 /* Onboarding */,
+				74D1AE802F17F8C00078A524 /* ProgramEditor */,
+				74D1AE842F17F8C00078A524 /* ProgramList */,
+				74D1AE872F17F8C00078A524 /* RaceView */,
+				74D1AE8A2F17F8C00078A524 /* SessionHistory */,
+				74D1AE8C2F17F8C00078A524 /* Settings */,
+				74D1AE912F17F8C00078A524 /* Statistics */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
 		};
-		74ADD6862F16212300947F23 /* 44RegattaTimer */ = {
+		74D1AE9D2F17F8C00078A524 /* 44RegattaTimer */ = {
 			isa = PBXGroup;
 			children = (
-				74ADD65A2F16212300947F23 /* Core */,
-				74ADD67B2F16212300947F23 /* Modules */,
-				74ADD67C2F16212300947F23 /* AppDelegate.swift */,
-				74ADD67D2F16212300947F23 /* Assets.xcassets */,
-				74ADD67E2F16212300947F23 /* ContentView.swift */,
-				74ADD67F2F16212300947F23 /* Info.plist */,
-				74ADD6812F16212300947F23 /* LaunchScreen.storyboard */,
-				74ADD6832F16212300947F23 /* Main.storyboard */,
-				74ADD6842F16212300947F23 /* SceneDelegate.swift */,
-				74ADD6852F16212300947F23 /* ViewController.swift */,
+				74D1AE712F17F8C00078A524 /* Core */,
+				74D1AE922F17F8C00078A524 /* Modules */,
+				74D1AE932F17F8C00078A524 /* AppDelegate.swift */,
+				74D1AE942F17F8C00078A524 /* Assets.xcassets */,
+				74D1AE952F17F8C00078A524 /* ContentView.swift */,
+				74D1AE962F17F8C00078A524 /* Info.plist */,
+				74D1AE982F17F8C00078A524 /* LaunchScreen.storyboard */,
+				74D1AE9A2F17F8C00078A524 /* Main.storyboard */,
+				74D1AE9B2F17F8C00078A524 /* SceneDelegate.swift */,
+				74D1AE9C2F17F8C00078A524 /* ViewController.swift */,
 			);
 			path = 44RegattaTimer;
 			sourceTree = "<group>";
@@ -327,7 +327,7 @@
 		74E2F1852F0E49050077B7C4 = {
 			isa = PBXGroup;
 			children = (
-				74ADD6862F16212300947F23 /* 44RegattaTimer */,
+				74D1AE9D2F17F8C00078A524 /* 44RegattaTimer */,
 				74E2F18F2F0E49050077B7C4 /* Products */,
 				CB7D37EB93F4E01D53A761E0 /* Pods */,
 				6C368B97BAB85EA09A02ABBB /* Frameworks */,
@@ -410,9 +410,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74ADD6B52F16212300947F23 /* Assets.xcassets in Resources */,
-				74ADD6B72F16212300947F23 /* LaunchScreen.storyboard in Resources */,
-				74ADD6B82F16212300947F23 /* Main.storyboard in Resources */,
+				74D1AECC2F17F8C00078A524 /* Assets.xcassets in Resources */,
+				74D1AECE2F17F8C00078A524 /* LaunchScreen.storyboard in Resources */,
+				74D1AECF2F17F8C00078A524 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,69 +448,69 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74ADD6882F16212300947F23 /* ProgramEntity.swift in Sources */,
-				74ADD6892F16212300947F23 /* CoreDataStack.swift in Sources */,
-				74ADD68A2F16212300947F23 /* PersistenceService.swift in Sources */,
-				74ADD68B2F16212300947F23 /* RegattaTimer.xcdatamodeld in Sources */,
-				74ADD68C2F16212300947F23 /* Achievement.swift in Sources */,
-				74ADD68D2F16212300947F23 /* Goal.swift in Sources */,
-				74ADD68E2F16212300947F23 /* Interval.swift in Sources */,
-				74ADD68F2F16212300947F23 /* IntervalType.swift in Sources */,
-				74ADD6902F16212300947F23 /* Program.swift in Sources */,
-				74ADD6912F16212300947F23 /* ScheduledWorkout.swift in Sources */,
-				74ADD6922F16212300947F23 /* SessionResult.swift in Sources */,
-				74ADD6932F16212300947F23 /* WorkoutMode.swift in Sources */,
-				74ADD6942F16212300947F23 /* AchievementService.swift in Sources */,
-				74ADD6952F16212300947F23 /* AudioService.swift in Sources */,
-				74ADD6962F16212300947F23 /* GoalService.swift in Sources */,
-				74ADD6972F16212300947F23 /* PaceGhostService.swift in Sources */,
-				74ADD6982F16212300947F23 /* ScheduleService.swift in Sources */,
-				74ADD6992F16212300947F23 /* TimerEngine.swift in Sources */,
-				74ADD69A2F16212300947F23 /* ColorTheme.swift in Sources */,
-				74ADD69B2F16212300947F23 /* AchievementsView.swift in Sources */,
-				74ADD69C2F16212300947F23 /* GoalEditorView.swift in Sources */,
-				74ADD69D2F16212300947F23 /* GoalsView.swift in Sources */,
-				74ADD69E2F16212300947F23 /* ScheduleEditorView.swift in Sources */,
-				74ADD69F2F16212300947F23 /* CheckLink.swift in Sources */,
-				74ADD6A02F16212300947F23 /* InternetViewController.swift in Sources */,
-				74ADD6A12F16212300947F23 /* LoaderViewController.swift in Sources */,
-				74ADD6A22F16212300947F23 /* OnboardingView.swift in Sources */,
-				74ADD6A32F16212300947F23 /* ProgramEditorView.swift in Sources */,
-				74ADD6A42F16212300947F23 /* ProgramEditorViewModel.swift in Sources */,
-				74ADD6A52F16212300947F23 /* ProgramListView.swift in Sources */,
-				74ADD6A62F16212300947F23 /* ProgramListViewModel.swift in Sources */,
-				74ADD6A72F16212300947F23 /* WorkoutModeSelectorView.swift in Sources */,
-				74ADD6A82F16212300947F23 /* RaceView.swift in Sources */,
-				74ADD6A92F16212300947F23 /* RaceViewModel.swift in Sources */,
-				74ADD6AA2F16212300947F23 /* HistoryViewModel.swift in Sources */,
-				74ADD6AB2F16212300947F23 /* SessionResultView.swift in Sources */,
-				74ADD6AC2F16212300947F23 /* SettingsView.swift in Sources */,
-				74ADD6AD2F16212300947F23 /* AnalyticsView.swift in Sources */,
-				74ADD6AE2F16212300947F23 /* HistoryView.swift in Sources */,
-				74ADD6AF2F16212300947F23 /* ProgressChartView.swift in Sources */,
-				74ADD6B02F16212300947F23 /* StatisticsViewModel.swift in Sources */,
-				74ADD6B12F16212300947F23 /* AppDelegate.swift in Sources */,
-				74ADD6B22F16212300947F23 /* ContentView.swift in Sources */,
-				74ADD6B32F16212300947F23 /* SceneDelegate.swift in Sources */,
-				74ADD6B42F16212300947F23 /* ViewController.swift in Sources */,
+				74D1AE9F2F17F8C00078A524 /* ProgramEntity.swift in Sources */,
+				74D1AEA02F17F8C00078A524 /* CoreDataStack.swift in Sources */,
+				74D1AEA12F17F8C00078A524 /* PersistenceService.swift in Sources */,
+				74D1AEA22F17F8C00078A524 /* RegattaTimer.xcdatamodeld in Sources */,
+				74D1AEA32F17F8C00078A524 /* Achievement.swift in Sources */,
+				74D1AEA42F17F8C00078A524 /* Goal.swift in Sources */,
+				74D1AEA52F17F8C00078A524 /* Interval.swift in Sources */,
+				74D1AEA62F17F8C00078A524 /* IntervalType.swift in Sources */,
+				74D1AEA72F17F8C00078A524 /* Program.swift in Sources */,
+				74D1AEA82F17F8C00078A524 /* ScheduledWorkout.swift in Sources */,
+				74D1AEA92F17F8C00078A524 /* SessionResult.swift in Sources */,
+				74D1AEAA2F17F8C00078A524 /* WorkoutMode.swift in Sources */,
+				74D1AEAB2F17F8C00078A524 /* AchievementService.swift in Sources */,
+				74D1AEAC2F17F8C00078A524 /* AudioService.swift in Sources */,
+				74D1AEAD2F17F8C00078A524 /* GoalService.swift in Sources */,
+				74D1AEAE2F17F8C00078A524 /* PaceGhostService.swift in Sources */,
+				74D1AEAF2F17F8C00078A524 /* ScheduleService.swift in Sources */,
+				74D1AEB02F17F8C00078A524 /* TimerEngine.swift in Sources */,
+				74D1AEB12F17F8C00078A524 /* ColorTheme.swift in Sources */,
+				74D1AEB22F17F8C00078A524 /* AchievementsView.swift in Sources */,
+				74D1AEB32F17F8C00078A524 /* GoalEditorView.swift in Sources */,
+				74D1AEB42F17F8C00078A524 /* GoalsView.swift in Sources */,
+				74D1AEB52F17F8C00078A524 /* ScheduleEditorView.swift in Sources */,
+				74D1AEB62F17F8C00078A524 /* CheckLink.swift in Sources */,
+				74D1AEB72F17F8C00078A524 /* InternetViewController.swift in Sources */,
+				74D1AEB82F17F8C00078A524 /* LoaderViewController.swift in Sources */,
+				74D1AEB92F17F8C00078A524 /* OnboardingView.swift in Sources */,
+				74D1AEBA2F17F8C00078A524 /* ProgramEditorView.swift in Sources */,
+				74D1AEBB2F17F8C00078A524 /* ProgramEditorViewModel.swift in Sources */,
+				74D1AEBC2F17F8C00078A524 /* ProgramListView.swift in Sources */,
+				74D1AEBD2F17F8C00078A524 /* ProgramListViewModel.swift in Sources */,
+				74D1AEBE2F17F8C00078A524 /* WorkoutModeSelectorView.swift in Sources */,
+				74D1AEBF2F17F8C00078A524 /* RaceView.swift in Sources */,
+				74D1AEC02F17F8C00078A524 /* RaceViewModel.swift in Sources */,
+				74D1AEC12F17F8C00078A524 /* HistoryViewModel.swift in Sources */,
+				74D1AEC22F17F8C00078A524 /* SessionResultView.swift in Sources */,
+				74D1AEC32F17F8C00078A524 /* SettingsView.swift in Sources */,
+				74D1AEC42F17F8C00078A524 /* AnalyticsView.swift in Sources */,
+				74D1AEC52F17F8C00078A524 /* HistoryView.swift in Sources */,
+				74D1AEC62F17F8C00078A524 /* ProgressChartView.swift in Sources */,
+				74D1AEC72F17F8C00078A524 /* StatisticsViewModel.swift in Sources */,
+				74D1AEC82F17F8C00078A524 /* AppDelegate.swift in Sources */,
+				74D1AEC92F17F8C00078A524 /* ContentView.swift in Sources */,
+				74D1AECA2F17F8C00078A524 /* SceneDelegate.swift in Sources */,
+				74D1AECB2F17F8C00078A524 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		74ADD6812F16212300947F23 /* LaunchScreen.storyboard */ = {
+		74D1AE982F17F8C00078A524 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				74ADD6802F16212300947F23 /* Base */,
+				74D1AE972F17F8C00078A524 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		74ADD6832F16212300947F23 /* Main.storyboard */ = {
+		74D1AE9A2F17F8C00078A524 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				74ADD6822F16212300947F23 /* Base */,
+				74D1AE992F17F8C00078A524 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -525,7 +525,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = 44RegattaTimer/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "NatioRegatta Timer";
@@ -563,7 +563,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = 44RegattaTimer/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "NatioRegatta Timer";
@@ -737,12 +737,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		74ADD6462F16212300947F23 /* RegattaTimer.xcdatamodeld */ = {
+		74D1AE5D2F17F8C00078A524 /* RegattaTimer.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				74ADD6872F16212300947F23 /* RegattaTimer.xcdatamodel */,
+				74D1AE9E2F17F8C00078A524 /* RegattaTimer.xcdatamodel */,
 			);
-			currentVersion = 74ADD6872F16212300947F23 /* RegattaTimer.xcdatamodel */;
+			currentVersion = 74D1AE9E2F17F8C00078A524 /* RegattaTimer.xcdatamodel */;
 			path = RegattaTimer.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

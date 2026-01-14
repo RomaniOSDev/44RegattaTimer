@@ -30,6 +30,17 @@ class RaceViewModel: ObservableObject {
         self.persistenceService = persistenceService
         self.ghostService = ghostService
         
+        // Debug: Log program info
+        print("RaceViewModel: Initialized with program '\(program.name)'")
+        print("RaceViewModel: Program has \(program.intervals.count) intervals")
+        if program.intervals.isEmpty {
+            print("RaceViewModel: WARNING - Program has no intervals!")
+        } else {
+            for (index, interval) in program.intervals.enumerated() {
+                print("RaceViewModel: Interval \(index): \(interval.name) - \(interval.duration)s")
+            }
+        }
+        
         setupSubscriptions()
         updateGhostProgress()
     }
@@ -55,7 +66,10 @@ class RaceViewModel: ObservableObject {
     }
     
     func startRace() {
-        timerEngine.start(program: program)
+        guard timerEngine.start(program: program) else {
+            print("RaceViewModel: Failed to start race - program may be invalid")
+            return
+        }
         AudioService.shared.playStartSound()
     }
     

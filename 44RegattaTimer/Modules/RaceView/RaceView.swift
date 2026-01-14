@@ -10,6 +10,7 @@ import SwiftUI
 struct RaceView: View {
     @StateObject private var viewModel: RaceViewModel
     @Environment(\.dismiss) private var dismiss
+    @State private var showingProgramEditor = false
     
     init(program: Program) {
         _viewModel = StateObject(wrappedValue: RaceViewModel(program: program))
@@ -57,6 +58,7 @@ struct RaceView: View {
                     .frame(width: geometry.size.width, height: geometry.size.height)
                 }
                 .frame(maxHeight: .infinity)
+                .allowsHitTesting(false)
                 
                 // Bottom panel - Timer and controls
                 VStack(spacing: 16) {
@@ -92,19 +94,58 @@ struct RaceView: View {
                     // Control buttons
                     HStack(spacing: 20) {
                         if viewModel.timerEngine.state == .ready {
-                            Button {
-                                viewModel.startRace()
-                            } label: {
-                                HStack {
-                                    Image(systemName: "play.fill")
-                                    Text("Start")
+                            if viewModel.program.intervals.isEmpty {
+                                VStack(spacing: 16) {
+                                    VStack(spacing: 8) {
+                                        Image(systemName: "exclamationmark.triangle.fill")
+                                            .font(.title2)
+                                            .foregroundColor(ColorTheme.boat)
+                                        Text("No intervals in program")
+                                            .font(.subheadline)
+                                            .foregroundColor(.white)
+                                        Text("Please edit the program to add intervals")
+                                            .font(.caption)
+                                            .foregroundColor(ColorTheme.track)
+                                    }
+                                    
+                                    Button {
+                                        showingProgramEditor = true
+                                    } label: {
+                                        HStack {
+                                            Image(systemName: "pencil")
+                                            Text("Edit Program")
+                                        }
+                                        .font(.headline)
+                                        .foregroundColor(ColorTheme.seaDeep)
+                                        .frame(maxWidth: .infinity)
+                                        .padding()
+                                        .background(ColorTheme.boat)
+                                        .cornerRadius(12)
+                                    }
+                                    .buttonStyle(.plain)
+                                    .contentShape(Rectangle())
                                 }
-                                .font(.headline)
-                                .foregroundColor(ColorTheme.seaDeep)
                                 .frame(maxWidth: .infinity)
                                 .padding()
-                                .background(ColorTheme.boat)
+                                .background(ColorTheme.seaDeep.opacity(0.5))
                                 .cornerRadius(12)
+                            } else {
+                                Button {
+                                    viewModel.startRace()
+                                } label: {
+                                    HStack {
+                                        Image(systemName: "play.fill")
+                                        Text("Start")
+                                    }
+                                    .font(.headline)
+                                    .foregroundColor(ColorTheme.seaDeep)
+                                    .frame(maxWidth: .infinity)
+                                    .padding()
+                                    .background(ColorTheme.boat)
+                                    .cornerRadius(12)
+                                }
+                                .buttonStyle(.plain)
+                                .contentShape(Rectangle())
                             }
                         } else if viewModel.timerEngine.state == .running {
                             Button {
@@ -121,6 +162,8 @@ struct RaceView: View {
                                 .background(ColorTheme.boat)
                                 .cornerRadius(12)
                             }
+                            .buttonStyle(.plain)
+                            .contentShape(Rectangle())
                             
                             Button {
                                 viewModel.skipInterval()
@@ -131,6 +174,8 @@ struct RaceView: View {
                                     .background(ColorTheme.track)
                                     .cornerRadius(12)
                             }
+                            .buttonStyle(.plain)
+                            .contentShape(Rectangle())
                             
                             Button {
                                 viewModel.stopRace()
@@ -141,6 +186,8 @@ struct RaceView: View {
                                     .background(Color.red)
                                     .cornerRadius(12)
                             }
+                            .buttonStyle(.plain)
+                            .contentShape(Rectangle())
                         } else if viewModel.timerEngine.state == .paused {
                             Button {
                                 viewModel.resumeRace()
@@ -156,6 +203,8 @@ struct RaceView: View {
                                 .background(ColorTheme.boat)
                                 .cornerRadius(12)
                             }
+                            .buttonStyle(.plain)
+                            .contentShape(Rectangle())
                             
                             Button {
                                 viewModel.stopRace()
@@ -166,6 +215,8 @@ struct RaceView: View {
                                     .background(Color.red)
                                     .cornerRadius(12)
                             }
+                            .buttonStyle(.plain)
+                            .contentShape(Rectangle())
                         }
                     }
                     .padding(.horizontal)
@@ -198,7 +249,36 @@ struct RaceView: View {
                 } label: {
                     Image(systemName: "xmark")
                         .foregroundColor(.white)
+                        .font(.headline)
                 }
+            }
+            
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button {
+                    showingProgramEditor = true
+                } label: {
+                    Image(systemName: "pencil")
+                        .foregroundColor(ColorTheme.boat)
+                        .font(.headline)
+                }
+            }
+        }
+        .sheet(isPresented: $showingProgramEditor) {
+            NavigationStack {
+                ProgramEditorView(program: viewModel.program)
+                    .onDisappear {
+                        // Reload program from database after editing
+                        let persistenceService = PersistenceService()
+                        if let updatedProgram = persistenceService.fetchProgram(by: viewModel.program.id) {
+                            viewModel.program = updatedProgram
+                            // Reset timer engine state if program was updated
+                            if viewModel.timerEngine.state == .ready {
+                                viewModel.timerEngine.currentIntervalIndex = 0
+                                viewModel.timerEngine.timeRemainingInInterval = 0
+                                viewModel.timerEngine.totalProgress = 0
+                            }
+                        }
+                    }
             }
         }
     }

@@ -13,6 +13,7 @@ struct ProgramEditorView: View {
     @State private var showingIntervalEditor = false
     @State private var editingInterval: Interval?
     @State private var editingIndex: Int?
+    @State private var showingSaveError = false
     
     init(program: Program? = nil) {
         _viewModel = StateObject(wrappedValue: ProgramEditorViewModel(program: program))
@@ -127,11 +128,15 @@ struct ProgramEditorView: View {
                 
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button("Save") {
-                        viewModel.saveProgram()
-                        dismiss()
+                        if viewModel.saveProgram() {
+                            dismiss()
+                        } else {
+                            showingSaveError = true
+                        }
                     }
                     .foregroundColor(ColorTheme.boat)
                     .fontWeight(.semibold)
+                    .disabled(viewModel.program.intervals.isEmpty)
                 }
                 
                 ToolbarItem(placement: .bottomBar) {
@@ -172,6 +177,11 @@ struct ProgramEditorView: View {
                         }
                     )
                 }
+            }
+            .alert("Cannot Save Program", isPresented: $showingSaveError) {
+                Button("OK", role: .cancel) { }
+            } message: {
+                Text("Please add at least one interval with a duration greater than 0 seconds before saving.")
             }
         }
     }
